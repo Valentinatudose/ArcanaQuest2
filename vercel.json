@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/subscribe.js": {
+    "api/**/*.js": {
       "runtime": "nodejs18.x"
     }
   },
