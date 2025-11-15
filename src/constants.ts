@@ -1,4 +1,4 @@
-import { TarotCard } from './types';
+import { TarotCard } from './types'; 
 
 export const TAROT_DECK: TarotCard[] = [
   // Example card (replace with your full 78-card deck)
