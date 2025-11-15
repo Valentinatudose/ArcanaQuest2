@@ -11,6 +11,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ message: 'Missing email or API key.' });
   }
 
+  // Validate email format
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     return res.status(400).json({ message: 'Invalid email address.' });
@@ -30,8 +31,10 @@ export default async function handler(req, res) {
     });
 
     if (response.ok) {
-      return res.status(200).json({ success: true });
+      return res.status(200).json({ success: true, message: 'Successfully subscribed!' });
     } else {
+      const errorData = await response.json();
+      console.error('Brevo API Error:', errorData);
       return res.status(400).json({ success: false, message: 'Subscription failed.' });
     }
   } catch (error) {
