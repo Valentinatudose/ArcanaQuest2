@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useGameState } from './hooks/useGameState';
 import { GamePhase, TarotCard as TarotCardType, Question as QuestionType } from './types';
-import { TAROT_DECK } from './constants';
+import { TAROT_DECK } from './constants'; 
 import { generateQuiz } from './services/quizService';
 import WelcomeScreen from './components/WelcomeScreen';
 import Auth from './components/Auth';
