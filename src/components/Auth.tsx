@@ -16,35 +16,13 @@ const Auth = ({ onAuthSuccess }: AuthProps) => {
       return;
     }
 
-    // Create a hidden iframe
-    const iframe = document.createElement('iframe');
-    iframe.name = 'mailchimp-frame';
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
+    const MAILCHIMP_U = '916fc2dd75b286d5de0c5593c';
+    const MAILCHIMP_ID = 'b1da420c53';
+    const url = `https://happyeverafter.us8.list-manage.com/subscribe/post-json?u=${MAILCHIMP_U}&id=${MAILCHIMP_ID}&EMAIL=${encodeURIComponent(email)}&c=?`;
 
-    // Create a hidden form targeting the iframe
-    const form = document.createElement('form');
-    form.method = 'POST';
-    form.action = 'https://happyeverafter.us8.list-manage.com/subscribe/post?u=916fc2dd75b286d5de0c5593c&id=b1da420c53&f_id=00f17be1f0';
-    form.target = 'mailchimp-frame';
-
-    const emailInput = document.createElement('input');
-    emailInput.type = 'hidden';
-    emailInput.name = 'EMAIL';
-    emailInput.value = email;
-
-    form.appendChild(emailInput);
-    document.body.appendChild(form);
-    form.submit();
-
-    // Clean up after a short delay
-    setTimeout(() => {
-      if (document.body.contains(form)) document.body.removeChild(form);
-      if (document.body.contains(iframe)) document.body.removeChild(iframe);
-    }, 1000);
-
-    // Immediately log in and proceed to the game
-    onAuthSuccess({ email });
+    fetch(url, { method: 'GET', mode: 'no-cors' })
+      .then(() => onAuthSuccess({ email }))
+      .catch(() => onAuthSuccess({ email })); // Best-effort
   };
 
   return (
