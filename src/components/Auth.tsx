@@ -1,3 +1,5 @@
+// src/components/Auth.tsx
+
 import { useState } from 'react';
 
 interface AuthProps {
@@ -9,37 +11,27 @@ const Auth = ({ onAuthSuccess }: AuthProps) => {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) {
-      setError('Please enter your email');
-      return;
-    }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setError('Please enter a valid email address');
+      setError('Please enter a valid email');
       return;
     }
 
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (data.success) {
-        onAuthSuccess({ email });
-      } else {
-        setError('Subscription failed. Please try again.');
-      }
-    } catch (err) {
-      setError('An unknown error occurred.');
-    } finally {
-      setLoading(false);
-    }
+    // Create a hidden form and submit to Mailchimp
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'https://happyeverafter.us8.list-manage.com/subscribe/post?u=916fc2dd75b286d5de0c5593c&id=b1da420c53&f_id=00f17be1f0';
+
+    const emailInput = document.createElement('input');
+    emailInput.type = 'hidden';
+    emailInput.name = 'EMAIL';
+    emailInput.value = email;
+
+    form.appendChild(emailInput);
+    document.body.appendChild(form);
+    form.submit();
   };
 
   return (
@@ -69,7 +61,7 @@ const Auth = ({ onAuthSuccess }: AuthProps) => {
           disabled={loading}
           className="w-full py-3 px-4 bg-brand-purple text-white font-bold rounded-lg shadow-lg hover:shadow-glow-purple transition-all duration-300 disabled:bg-opacity-50 disabled:cursor-not-allowed"
         >
-          {loading ? 'Processing...' : 'Register'}
+          Register
         </button>
       </form>
     </div>
