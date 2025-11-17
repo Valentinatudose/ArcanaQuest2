@@ -5,11 +5,11 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 0,
     name: "The Fool",
-    image: "https://via.placeholder.com/200x300/4B5563/FFFFFF?text=The+Fool",
+    image: "/cards/the-fool.jpg", // ← Will use placeholder until you add real image
     keywords: ["Beginnings", "Innocence", "Spontaneity", "Freedom"],
     meanings: {
-      upright: "New beginnings, innocence, spontaneity, free spirit, trusting the universe.",
-      reversed: "Recklessness, taken advantage of, poor judgment, inconsideration."
+      upright: "New beginnings, innocence, spontaneity, free spirit.",
+      reversed: "Recklessness, taken advantage of, inconsideration."
     },
     numerology: 0,
     astrology: "Uranus"
@@ -17,7 +17,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 1,
     name: "The Magician",
-    image: "https://via.placeholder.com/200x300/7C3AED/FFFFFF?text=The+Magician",
+    image: "/cards/the-magician.jpg",
     keywords: ["Manifestation", "Resourcefulness", "Power", "Will"],
     meanings: {
       upright: "Manifestation, resourcefulness, power, inspired action.",
@@ -29,7 +29,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 2,
     name: "The High Priestess",
-    image: "https://via.placeholder.com/200x300/0D9488/FFFFFF?text=The+High+Priestess",
+    image: "/cards/the-high-priestess.jpg",
     keywords: ["Intuition", "Mystery", "Sacred Knowledge", "Unconscious"],
     meanings: {
       upright: "Intuition, sacred knowledge, divine feminine, the subconscious mind.",
@@ -41,7 +41,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 3,
     name: "The Empress",
-    image: "https://via.placeholder.com/200x300/D97706/FFFFFF?text=The+Empress",
+    image: "/cards/the-empress.jpg",
     keywords: ["Femininity", "Abundance", "Nurturing", "Creativity"],
     meanings: {
       upright: "Femininity, beauty, nature, nurturing, abundance, fertility.",
@@ -53,7 +53,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 4,
     name: "The Emperor",
-    image: "https://via.placeholder.com/200x300/DC2626/FFFFFF?text=The+Emperor",
+    image: "/cards/the-emperor.jpg",
     keywords: ["Authority", "Structure", "Control", "Fatherhood"],
     meanings: {
       upright: "Authority, structure, control, stability, leadership, fatherhood.",
@@ -65,7 +65,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 5,
     name: "The Hierophant",
-    image: "https://via.placeholder.com/200x300/7E22CE/FFFFFF?text=The+Hierophant",
+    image: "/cards/the-hierophant.jpg",
     keywords: ["Tradition", "Conformity", "Spirituality", "Institutions"],
     meanings: {
       upright: "Spiritual wisdom, religious beliefs, conformity, tradition, institutions.",
@@ -77,7 +77,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 6,
     name: "The Lovers",
-    image: "https://via.placeholder.com/200x300/BE185D/FFFFFF?text=The+Lovers",
+    image: "/cards/the-lovers.jpg",
     keywords: ["Love", "Harmony", "Relationships", "Choices"],
     meanings: {
       upright: "Love, harmony, relationships, alignment of values, choices.",
@@ -89,7 +89,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 7,
     name: "The Chariot",
-    image: "https://via.placeholder.com/200x300/0891B2/FFFFFF?text=The+Chariot",
+    image: "/cards/the-chariot.jpg",
     keywords: ["Control", "Willpower", "Victory", "Determination"],
     meanings: {
       upright: "Control, willpower, victory, assertion, determination.",
@@ -101,7 +101,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 8,
     name: "Strength",
-    image: "https://via.placeholder.com/200x300/EA580C/FFFFFF?text=Strength",
+    image: "/cards/strength.jpg",
     keywords: ["Courage", "Inner Strength", "Compassion", "Patience"],
     meanings: {
       upright: "Inner strength, courage, compassion, patience, influence.",
@@ -113,7 +113,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 9,
     name: "The Hermit",
-    image: "https://via.placeholder.com/200x300/1E293B/FFFFFF?text=The+Hermit",
+    image: "/cards/the-hermit.jpg",
     keywords: ["Soul-searching", "Introspection", "Guidance", "Solitude"],
     meanings: {
       upright: "Soul-searching, introspection, guidance, inner wisdom, solitude.",
@@ -125,7 +125,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 10,
     name: "Wheel of Fortune",
-    image: "https://via.placeholder.com/200x300/16A34A/FFFFFF?text=Wheel+of+Fortune",
+    image: "/cards/wheel-of-fortune.jpg",
     keywords: ["Change", "Cycles", "Fate", "Luck"],
     meanings: {
       upright: "Good luck, karma, destiny, turning point, cycles.",
@@ -137,7 +137,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 11,
     name: "Justice",
-    image: "https://via.placeholder.com/200x300/1D4ED8/FFFFFF?text=Justice",
+    image: "/cards/justice.jpg",
     keywords: ["Fairness", "Truth", "Law", "Cause and Effect"],
     meanings: {
       upright: "Fairness, truth, justice, law, accountability, cause and effect.",
@@ -149,7 +149,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 12,
     name: "The Hanged Man",
-    image: "https://via.placeholder.com/200x300/7C2D12/FFFFFF?text=The+Hanged+Man",
+    image: "/cards/the-hanged-man.jpg",
     keywords: ["Surrender", "New Perspective", "Letting Go", "Patience"],
     meanings: {
       upright: "Surrender, new perspective, letting go, patience, suspension.",
@@ -161,7 +161,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 13,
     name: "Death",
-    image: "https://via.placeholder.com/200x300/000000/FFFFFF?text=Death",
+    image: "/cards/death.jpg",
     keywords: ["Endings", "Change", "Transformation", "Rebirth"],
     meanings: {
       upright: "Endings, change, transformation, transition, rebirth.",
@@ -173,7 +173,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 14,
     name: "Temperance",
-    image: "https://via.placeholder.com/200x300/78716C/FFFFFF?text=Temperance",
+    image: "/cards/temperance.jpg",
     keywords: ["Balance", "Patience", "Moderation", "Harmony"],
     meanings: {
       upright: "Balance, moderation, patience, harmony, purpose.",
@@ -185,7 +185,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 15,
     name: "The Devil",
-    image: "https://via.placeholder.com/200x300/EF4444/FFFFFF?text=The+Devil",
+    image: "/cards/the-devil.jpg",
     keywords: ["Shadow Self", "Addiction", "Materialism", "Bondage"],
     meanings: {
       upright: "Shadow self, attachment, addiction, materialism, bondage.",
@@ -197,7 +197,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 16,
     name: "The Tower",
-    image: "https://via.placeholder.com/200x300/1E1B4B/FFFFFF?text=The+Tower",
+    image: "/cards/the-tower.jpg",
     keywords: ["Sudden Change", "Upheaval", "Revelation", "Liberation"],
     meanings: {
       upright: "Sudden change, upheaval, chaos, revelation, liberation.",
@@ -209,7 +209,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 17,
     name: "The Star",
-    image: "https://via.placeholder.com/200x300/0891B2/FFFFFF?text=The+Star",
+    image: "/cards/the-star.jpg",
     keywords: ["Hope", "Inspiration", "Faith", "Renewal"],
     meanings: {
       upright: "Hope, faith, purpose, renewal, spirituality, serenity.",
@@ -221,7 +221,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 18,
     name: "The Moon",
-    image: "https://via.placeholder.com/200x300/0F172A/FFFFFF?text=The+Moon",
+    image: "/cards/the-moon.jpg",
     keywords: ["Illusion", "Fear", "Anxiety", "Unconscious"],
     meanings: {
       upright: "Illusion, fear, anxiety, unconscious, intuition.",
@@ -233,7 +233,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 19,
     name: "The Sun",
-    image: "https://via.placeholder.com/200x300/F59E0B/FFFFFF?text=The+Sun",
+    image: "/cards/the-sun.jpg",
     keywords: ["Joy", "Success", "Vitality", "Positivity"],
     meanings: {
       upright: "Joy, success, celebration, positivity, vitality, confidence.",
@@ -245,7 +245,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 20,
     name: "Judgement",
-    image: "https://via.placeholder.com/200x300/4C1D95/FFFFFF?text=Judgement",
+    image: "/cards/judgement.jpg",
     keywords: ["Rebirth", "Reflection", "Awakening", "Absolution"],
     meanings: {
       upright: "Rebirth, inner calling, absolution, self-reflection, awakening.",
@@ -257,7 +257,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 21,
     name: "The World",
-    image: "https://via.placeholder.com/200x300/059669/FFFFFF?text=The+World",
+    image: "/cards/the-world.jpg",
     keywords: ["Completion", "Integration", "Wholeness", "Travel"],
     meanings: {
       upright: "Completion, integration, accomplishment, travel, wholeness.",
@@ -271,7 +271,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 22,
     name: "Ace of Cups",
-    image: "https://via.placeholder.com/200x300/0891B2/FFFFFF?text=Ace+of+Cups",
+    image: "/cards/ace-of-cups.jpg",
     keywords: ["Love", "New Feelings", "Spirituality", "Intuition"],
     meanings: {
       upright: "New feelings, love, spirituality, intuition, emotional opportunities.",
@@ -283,7 +283,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 23,
     name: "Two of Cups",
-    image: "https://via.placeholder.com/200x300/0891B2/FFFFFF?text=Two+of+Cups",
+    image: "/cards/two-of-cups.jpg",
     keywords: ["Union", "Partnership", "Connection", "Harmony"],
     meanings: {
       upright: "Union, partnership, connection, attraction, harmony.",
@@ -292,15 +292,156 @@ export const TAROT_DECK: TarotCard[] = [
     numerology: 2,
     astrology: "Venus in Cancer"
   },
-  // ... (you can expand with all 14 Cups if needed)
+  {
+    id: 24,
+    name: "Three of Cups",
+    image: "/cards/three-of-cups.jpg",
+    keywords: ["Celebration", "Friendship", "Community", "Joy"],
+    meanings: {
+      upright: "Celebration, friendship, community, joy, socializing.",
+      reversed: "Isolation, exclusion, superficial connections."
+    },
+    numerology: 3,
+    astrology: "Moon in Cancer"
+  },
+  {
+    id: 25,
+    name: "Four of Cups",
+    image: "/cards/four-of-cups.jpg",
+    keywords: ["Apathy", "Discontent", "Boredom", "Indifference"],
+    meanings: {
+      upright: "Apathy, discontent, boredom, indifference, disengagement.",
+      reversed: "New opportunities, renewed interest, re-engagement."
+    },
+    numerology: 4,
+    astrology: "Jupiter in Cancer"
+  },
+  {
+    id: 26,
+    name: "Five of Cups",
+    image: "/cards/five-of-cups.jpg",
+    keywords: ["Loss", "Regret", "Disappointment", "Grief"],
+    meanings: {
+      upright: "Loss, regret, disappointment, grief, focusing on what's gone.",
+      reversed: "Acceptance, moving on, finding hope in the present."
+    },
+    numerology: 5,
+    astrology: "Mars in Cancer"
+  },
+  {
+    id: 27,
+    name: "Six of Cups",
+    image: "/cards/six-of-cups.jpg",
+    keywords: ["Nostalgia", "Childhood", "Innocence", "Memory"],
+    meanings: {
+      upright: "Nostalgia, childhood, innocence, memory, revisiting the past.",
+      reversed: "Stuck in the past, unrealistic expectations, idealization."
+    },
+    numerology: 6,
+    astrology: "Venus in Cancer"
+  },
+  {
+    id: 28,
+    name: "Seven of Cups",
+    image: "/cards/seven-of-cups.jpg",
+    keywords: ["Illusion", "Choice", "Fantasy", "Confusion"],
+    meanings: {
+      upright: "Illusion, choice, fantasy, confusion, daydreaming.",
+      reversed: "Clarity, focus, practical decisions, grounding."
+    },
+    numerology: 7,
+    astrology: "Neptune in Cancer"
+  },
+  {
+    id: 29,
+    name: "Eight of Cups",
+    image: "/cards/eight-of-cups.jpg",
+    keywords: ["Walking Away", "Letting Go", "Disillusionment", "Withdrawal"],
+    meanings: {
+      upright: "Walking away, letting go, disillusionment, withdrawal, seeking deeper meaning.",
+      reversed: "Staying too long, fear of change, clinging to the familiar."
+    },
+    numerology: 8,
+    astrology: "Saturn in Cancer"
+  },
+  {
+    id: 30,
+    name: "Nine of Cups",
+    image: "/cards/nine-of-cups.jpg",
+    keywords: ["Contentment", "Wishes Fulfilled", "Satisfaction", "Gratitude"],
+    meanings: {
+      upright: "Contentment, wishes fulfilled, satisfaction, gratitude, emotional fulfillment.",
+      reversed: "Overindulgence, complacency, unmet expectations."
+    },
+    numerology: 9,
+    astrology: "Jupiter in Cancer"
+  },
+  {
+    id: 31,
+    name: "Ten of Cups",
+    image: "/cards/ten-of-cups.jpg",
+    keywords: ["Happiness", "Family", "Harmony", "Fulfillment"],
+    meanings: {
+      upright: "Happiness, family, harmony, fulfillment, emotional security.",
+      reversed: "Dysfunction, conflict, unfulfilled dreams."
+    },
+    numerology: 10,
+    astrology: "Moon in Cancer"
+  },
+  {
+    id: 32,
+    name: "Page of Cups",
+    image: "/cards/page-of-cups.jpg",
+    keywords: ["Emotional Growth", "Intuition", "New Feelings", "Creativity"],
+    meanings: {
+      upright: "Emotional growth, intuition, new feelings, creativity, sensitivity.",
+      reversed: "Emotional immaturity, avoidance, blocked creativity."
+    },
+    numerology: 11,
+    astrology: "Mercury in Cancer"
+  },
+  {
+    id: 33,
+    name: "Knight of Cups",
+    image: "/cards/knight-of-cups.jpg",
+    keywords: ["Romance", "Charm", "Idealism", "Emotional Journey"],
+    meanings: {
+      upright: "Romance, charm, idealism, emotional journey, artistic expression.",
+      reversed: "Deceit, emotional manipulation, unrealistic expectations."
+    },
+    numerology: 12,
+    astrology: "Venus in Cancer"
+  },
+  {
+    id: 34,
+    name: "Queen of Cups",
+    image: "/cards/queen-of-cups.jpg",
+    keywords: ["Compassion", "Intuition", "Nurturing", "Empathy"],
+    meanings: {
+      upright: "Compassion, intuition, nurturing, empathy, emotional support.",
+      reversed: "Overly sensitive, moodiness, emotional dependency."
+    },
+    numerology: 13,
+    astrology: "Moon in Cancer"
+  },
+  {
+    id: 35,
+    name: "King of Cups",
+    image: "/cards/king-of-cups.jpg",
+    keywords: ["Emotional Maturity", "Compassion", "Balance", "Wisdom"],
+    meanings: {
+      upright: "Emotional maturity, compassion, balance, wisdom, emotional control.",
+      reversed: "Emotional manipulation, repression, coldness."
+    },
+    numerology: 14,
+    astrology: "Jupiter in Cancer"
+  },
 
-  // For brevity, I'll add 2 more suits as examples — you can expand fully later.
-  
   // === Minor Arcana: Wands ===
   {
     id: 36,
     name: "Ace of Wands",
-    image: "https://via.placeholder.com/200x300/EA580C/FFFFFF?text=Ace+of+Wands",
+    image: "/cards/ace-of-wands.jpg",
     keywords: ["Inspiration", "New Opportunities", "Growth", "Potential"],
     meanings: {
       upright: "Inspiration, new opportunities, growth, potential, passion.",
@@ -312,7 +453,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 37,
     name: "Two of Wands",
-    image: "https://via.placeholder.com/200x300/EA580C/FFFFFF?text=Two+of+Wands",
+    image: "/cards/two-of-wands.jpg",
     keywords: ["Future Planning", "Progress", "Decisions", "Discovery"],
     meanings: {
       upright: "Future planning, progress, decisions, discovery, expansion.",
@@ -321,12 +462,156 @@ export const TAROT_DECK: TarotCard[] = [
     numerology: 2,
     astrology: "Mars in Aries"
   },
+  {
+    id: 38,
+    name: "Three of Wands",
+    image: "/cards/three-of-wands.jpg",
+    keywords: ["Expansion", "Planning", "Teamwork", "Vision"],
+    meanings: {
+      upright: "Expansion, planning, teamwork, vision, looking ahead.",
+      reversed: "Stagnation, lack of direction, isolation."
+    },
+    numerology: 3,
+    astrology: "Jupiter in Aries"
+  },
+  {
+    id: 39,
+    name: "Four of Wands",
+    image: "/cards/four-of-wands.jpg",
+    keywords: ["Celebration", "Stability", "Home", "Foundation"],
+    meanings: {
+      upright: "Celebration, stability, home, foundation, harmony.",
+      reversed: "Instability, lack of security, temporary situations."
+    },
+    numerology: 4,
+    astrology: "Venus in Aries"
+  },
+  {
+    id: 40,
+    name: "Five of Wands",
+    image: "/cards/five-of-wands.jpg",
+    keywords: ["Conflict", "Competition", "Struggle", "Challenge"],
+    meanings: {
+      upright: "Conflict, competition, struggle, challenge, testing boundaries.",
+      reversed: "Resolution, cooperation, avoiding unnecessary conflict."
+    },
+    numerology: 5,
+    astrology: "Mars in Aries"
+  },
+  {
+    id: 41,
+    name: "Six of Wands",
+    image: "/cards/six-of-wands.jpg",
+    keywords: ["Victory", "Recognition", "Success", "Celebration"],
+    meanings: {
+      upright: "Victory, recognition, success, celebration, public approval.",
+      reversed: "Ego, arrogance, false victory, lack of recognition."
+    },
+    numerology: 6,
+    astrology: "Sun in Aries"
+  },
+  {
+    id: 42,
+    name: "Seven of Wands",
+    image: "/cards/seven-of-wands.jpg",
+    keywords: ["Defense", "Perseverance", "Stand Your Ground", "Resilience"],
+    meanings: {
+      upright: "Defense, perseverance, stand your ground, resilience, overcoming obstacles.",
+      reversed: "Giving up, surrender, feeling overwhelmed."
+    },
+    numerology: 7,
+    astrology: "Moon in Aries"
+  },
+  {
+    id: 43,
+    name: "Eight of Wands",
+    image: "/cards/eight-of-wands.jpg",
+    keywords: ["Speed", "Action", "Progress", "Movement"],
+    meanings: {
+      upright: "Speed, action, progress, movement, quick results.",
+      reversed: "Delays, stagnation, lack of momentum."
+    },
+    numerology: 8,
+    astrology: "Mercury in Aries"
+  },
+  {
+    id: 44,
+    name: "Nine of Wands",
+    image: "/cards/nine-of-wands.jpg",
+    keywords: ["Endurance", "Resilience", "Last Stand", "Preparation"],
+    meanings: {
+      upright: "Endurance, resilience, last stand, preparation, guard your position.",
+      reversed: "Exhaustion, giving up, lack of preparedness."
+    },
+    numerology: 9,
+    astrology: "Saturn in Aries"
+  },
+  {
+    id: 45,
+    name: "Ten of Wands",
+    image: "/cards/ten-of-wands.jpg",
+    keywords: ["Burden", "Responsibility", "Overwhelm", "Commitment"],
+    meanings: {
+      upright: "Burden, responsibility, overwhelm, commitment, carrying weight.",
+      reversed: "Releasing burden, delegating, lightening load."
+    },
+    numerology: 10,
+    astrology: "Jupiter in Aries"
+  },
+  {
+    id: 46,
+    name: "Page of Wands",
+    image: "/cards/page-of-wands.jpg",
+    keywords: ["Enthusiasm", "Adventure", "New Ideas", "Energy"],
+    meanings: {
+      upright: "Enthusiasm, adventure, new ideas, energy, curiosity.",
+      reversed: "Impatience, recklessness, lack of follow-through."
+    },
+    numerology: 11,
+    astrology: "Mercury in Aries"
+  },
+  {
+    id: 47,
+    name: "Knight of Wands",
+    image: "/cards/knight-of-wands.jpg",
+    keywords: ["Action", "Passion", "Adventure", "Impulsiveness"],
+    meanings: {
+      upright: "Action, passion, adventure, impulsiveness, bold moves.",
+      reversed: "Rashness, impatience, burnout, lack of direction."
+    },
+    numerology: 12,
+    astrology: "Venus in Aries"
+  },
+  {
+    id: 48,
+    name: "Queen of Wands",
+    image: "/cards/queen-of-wands.jpg",
+    keywords: ["Confidence", "Charisma", "Leadership", "Passion"],
+    meanings: {
+      upright: "Confidence, charisma, leadership, passion, warmth.",
+      reversed: "Jealousy, insecurity, domineering behavior."
+    },
+    numerology: 13,
+    astrology: "Moon in Aries"
+  },
+  {
+    id: 49,
+    name: "King of Wands",
+    image: "/cards/king-of-wands.jpg",
+    keywords: ["Leadership", "Vision", "Courage", "Inspiration"],
+    meanings: {
+      upright: "Leadership, vision, courage, inspiration, dynamic energy.",
+      reversed: "Tyranny, arrogance, reckless ambition."
+    },
+    numerology: 14,
+    astrology: "Jupiter in Aries"
+  },
 
   // === Minor Arcana: Swords ===
   {
     id: 50,
     name: "Ace of Swords",
-    image: "https://via.placeholder.com/200x300/0891B2/FFFFFF?text=Ace+of+Swords",
+    image: "/cards/ace-of-swords.jpg",
     keywords: ["Clarity", "Breakthrough", "Truth", "Mental Power"],
     meanings: {
       upright: "Clarity, breakthrough, truth, mental power, new ideas.",
@@ -335,12 +620,168 @@ export const TAROT_DECK: TarotCard[] = [
     numerology: 1,
     astrology: "Air"
   },
+  {
+    id: 51,
+    name: "Two of Swords",
+    image: "/cards/two-of-swords.jpg",
+    keywords: ["Indecision", "Stalemate", "Balance", "Avoidance"],
+    meanings: {
+      upright: "Indecision, stalemate, balance, avoidance, weighing options.",
+      reversed: "Decision made, breaking deadlock, facing reality."
+    },
+    numerology: 2,
+    astrology: "Mercury in Air"
+  },
+  {
+    id: 52,
+    name: "Three of Swords",
+    image: "/cards/three-of-swords.jpg",
+    keywords: ["Heartbreak", "Pain", "Sorrow", "Betrayal"],
+    meanings: {
+      upright: "Heartbreak, pain, sorrow, betrayal, emotional wound.",
+      reversed: "Healing, forgiveness, moving on, release of pain."
+    },
+    numerology: 3,
+    astrology: "Moon in Air"
+  },
+  {
+    id: 53,
+    name: "Four of Swords",
+    image: "/cards/four-of-swords.jpg",
+    keywords: ["Rest", "Recovery", "Peace", "Meditation"],
+    meanings: {
+      upright: "Rest, recovery, peace, meditation, retreat, healing.",
+      reversed: "Restlessness, impatience, forced rest, mental fatigue."
+    },
+    numerology: 4,
+    astrology: "Venus in Air"
+  },
+  {
+    id: 54,
+    name: "Five of Swords",
+    image: "/cards/five-of-swords.jpg",
+    keywords: ["Conflict", "Defeat", "Aggression", "Win at All Costs"],
+    meanings: {
+      upright: "Conflict, defeat, aggression, win at all costs, verbal sparring.",
+      reversed: "Reconciliation, compromise, letting go of grudges."
+    },
+    numerology: 5,
+    astrology: "Mars in Air"
+  },
+  {
+    id: 55,
+    name: "Six of Swords",
+    image: "/cards/six-of-swords.jpg",
+    keywords: ["Transition", "Move On", "Progress", "Healing"],
+    meanings: {
+      upright: "Transition, move on, progress, healing, leaving the past behind.",
+      reversed: "Stuck in the past, resistance to change, emotional baggage."
+    },
+    numerology: 6,
+    astrology: "Jupiter in Air"
+  },
+  {
+    id: 56,
+    name: "Seven of Swords",
+    image: "/cards/seven-of-swords.jpg",
+    keywords: ["Deception", "Stealth", "Strategy", "Trickery"],
+    meanings: {
+      upright: "Deception, stealth, strategy, trickery, bending the rules.",
+      reversed: "Honesty, transparency, facing consequences, no more secrets."
+    },
+    numerology: 7,
+    astrology: "Moon in Air"
+  },
+  {
+    id: 57,
+    name: "Eight of Swords",
+    image: "/cards/eight-of-swords.jpg",
+    keywords: ["Trapped", "Limitation", "Restriction", "Fear"],
+    meanings: {
+      upright: "Trapped, limitation, restriction, fear, self-imposed prison.",
+      reversed: "Freedom, release, breaking free, regaining control."
+    },
+    numerology: 8,
+    astrology: "Saturn in Air"
+  },
+  {
+    id: 58,
+    name: "Nine of Swords",
+    image: "/cards/nine-of-swords.jpg",
+    keywords: ["Anxiety", "Nightmares", "Worry", "Guilt"],
+    meanings: {
+      upright: "Anxiety, nightmares, worry, guilt, mental anguish.",
+      reversed: "Relief, release, facing fears, letting go of guilt."
+    },
+    numerology: 9,
+    astrology: "Neptune in Air"
+  },
+  {
+    id: 59,
+    name: "Ten of Swords",
+    image: "/cards/ten-of-swords.jpg",
+    keywords: ["End", "Finality", "Devastation", "Release"],
+    meanings: {
+      upright: "End, finality, devastation, release, hitting rock bottom.",
+      reversed: "Recovery, rebuilding, learning from failure."
+    },
+    numerology: 10,
+    astrology: "Pluto in Air"
+  },
+  {
+    id: 60,
+    name: "Page of Swords",
+    image: "/cards/page-of-swords.jpg",
+    keywords: ["Curiosity", "Intellect", "Alertness", "New Ideas"],
+    meanings: {
+      upright: "Curiosity, intellect, alertness, new ideas, sharp mind.",
+      reversed: "Immaturity, impatience, hasty decisions, lack of focus."
+    },
+    numerology: 11,
+    astrology: "Mercury in Air"
+  },
+  {
+    id: 61,
+    name: "Knight of Swords",
+    image: "/cards/knight-of-swords.jpg",
+    keywords: ["Action", "Aggression", "Directness", "Impulsiveness"],
+    meanings: {
+      upright: "Action, aggression, directness, impulsiveness, charging forward.",
+      reversed: "Recklessness, rashness, lack of strategy, burnout."
+    },
+    numerology: 12,
+    astrology: "Venus in Air"
+  },
+  {
+    id: 62,
+    name: "Queen of Swords",
+    image: "/cards/queen-of-swords.jpg",
+    keywords: ["Clarity", "Truth", "Independence", "Sharp Mind"],
+    meanings: {
+      upright: "Clarity, truth, independence, sharp mind, cutting through illusions.",
+      reversed: "Cynicism, bitterness, coldness, emotional detachment."
+    },
+    numerology: 13,
+    astrology: "Moon in Air"
+  },
+  {
+    id: 63,
+    name: "King of Swords",
+    image: "/cards/king-of-swords.jpg",
+    keywords: ["Logic", "Authority", "Justice", "Intellect"],
+    meanings: {
+      upright: "Logic, authority, justice, intellect, clear thinking.",
+      reversed: "Cruelty, tyranny, manipulation, misuse of power."
+    },
+    numerology: 14,
+    astrology: "Jupiter in Air"
+  },
 
   // === Minor Arcana: Pentacles ===
   {
     id: 64,
     name: "Ace of Pentacles",
-    image: "https://via.placeholder.com/200x300/16A34A/FFFFFF?text=Ace+of+Pentacles",
+    image: "/cards/ace-of-pentacles.jpg",
     keywords: ["Opportunity", "Prosperity", "New Ventures", "Wealth"],
     meanings: {
       upright: "Opportunity, prosperity, new ventures, wealth, manifestation.",
@@ -348,5 +789,161 @@ export const TAROT_DECK: TarotCard[] = [
     },
     numerology: 1,
     astrology: "Earth"
+  },
+  {
+    id: 65,
+    name: "Two of Pentacles",
+    image: "/cards/two-of-pentacles.jpg",
+    keywords: ["Balance", "Adaptability", "Juggling", "Flexibility"],
+    meanings: {
+      upright: "Balance, adaptability, juggling, flexibility, managing multiple priorities.",
+      reversed: "Overwhelm, imbalance, poor time management, stress."
+    },
+    numerology: 2,
+    astrology: "Mercury in Earth"
+  },
+  {
+    id: 66,
+    name: "Three of Pentacles",
+    image: "/cards/three-of-pentacles.jpg",
+    keywords: ["Teamwork", "Skill", "Collaboration", "Mastery"],
+    meanings: {
+      upright: "Teamwork, skill, collaboration, mastery, building something together.",
+      reversed: "Lack of cooperation, poor craftsmanship, isolation."
+    },
+    numerology: 3,
+    astrology: "Moon in Earth"
+  },
+  {
+    id: 67,
+    name: "Four of Pentacles",
+    image: "/cards/four-of-pentacles.jpg",
+    keywords: ["Security", "Possession", "Conservatism", "Hoarding"],
+    meanings: {
+      upright: "Security, possession, conservatism, hoarding, material stability.",
+      reversed: "Generosity, letting go, financial freedom, sharing."
+    },
+    numerology: 4,
+    astrology: "Venus in Earth"
+  },
+  {
+    id: 68,
+    name: "Five of Pentacles",
+    image: "/cards/five-of-pentacles.jpg",
+    keywords: ["Hardship", "Poverty", "Exclusion", "Struggle"],
+    meanings: {
+      upright: "Hardship, poverty, exclusion, struggle, feeling left out.",
+      reversed: "Recovery, support, finding help, overcoming adversity."
+    },
+    numerology: 5,
+    astrology: "Mars in Earth"
+  },
+  {
+    id: 69,
+    name: "Six of Pentacles",
+    image: "/cards/six-of-pentacles.jpg",
+    keywords: ["Generosity", "Charity", "Giving", "Receiving"],
+    meanings: {
+      upright: "Generosity, charity, giving, receiving, balance of exchange.",
+      reversed: "Manipulation, dependency, stinginess, imbalance."
+    },
+    numerology: 6,
+    astrology: "Jupiter in Earth"
+  },
+  {
+    id: 70,
+    name: "Seven of Pentacles",
+    image: "/cards/seven-of-pentacles.jpg",
+    keywords: ["Patience", "Evaluation", "Long-Term Goals", "Waiting"],
+    meanings: {
+      upright: "Patience, evaluation, long-term goals, waiting for results.",
+      reversed: "Impatience, frustration, lack of progress, giving up."
+    },
+    numerology: 7,
+    astrology: "Moon in Earth"
+  },
+  {
+    id: 71,
+    name: "Eight of Pentacles",
+    image: "/cards/eight-of-pentacles.jpg",
+    keywords: ["Dedication", "Skill", "Mastery", "Hard Work"],
+    meanings: {
+      upright: "Dedication, skill, mastery, hard work, attention to detail.",
+      reversed: "Burnout, lack of focus, poor quality, half-hearted effort."
+    },
+    numerology: 8,
+    astrology: "Saturn in Earth"
+  },
+  {
+    id: 72,
+    name: "Nine of Pentacles",
+    image: "/cards/nine-of-pentacles.jpg",
+    keywords: ["Independence", "Self-Sufficiency", "Luxury", "Reward"],
+    meanings: {
+      upright: "Independence, self-sufficiency, luxury, reward, enjoying the fruits of labor.",
+      reversed: "Dependence, financial instability, lack of appreciation."
+    },
+    numerology: 9,
+    astrology: "Neptune in Earth"
+  },
+  {
+    id: 73,
+    name: "Ten of Pentacles",
+    image: "/cards/ten-of-pentacles.jpg",
+    keywords: ["Legacy", "Wealth", "Family", "Abundance"],
+    meanings: {
+      upright: "Legacy, wealth, family, abundance, long-term security.",
+      reversed: "Financial loss, family discord, short-term gains."
+    },
+    numerology: 10,
+    astrology: "Pluto in Earth"
+  },
+  {
+    id: 74,
+    name: "Page of Pentacles",
+    image: "/cards/page-of-pentacles.jpg",
+    keywords: ["Practicality", "Learning", "New Skills", "Material Focus"],
+    meanings: {
+      upright: "Practicality, learning, new skills, material focus, grounded approach.",
+      reversed: "Laziness, lack of discipline, short-term thinking."
+    },
+    numerology: 11,
+    astrology: "Mercury in Earth"
+  },
+  {
+    id: 75,
+    name: "Knight of Pentacles",
+    image: "/cards/knight-of-pentacles.jpg",
+    keywords: ["Diligence", "Reliability", "Consistency", "Hard Work"],
+    meanings: {
+      upright: "Diligence, reliability, consistency, hard work, slow but steady progress.",
+      reversed: "Stubbornness, laziness, lack of initiative, resistance to change."
+    },
+    numerology: 12,
+    astrology: "Venus in Earth"
+  },
+  {
+    id: 76,
+    name: "Queen of Pentacles",
+    image: "/cards/queen-of-pentacles.jpg",
+    keywords: ["Nurturing", "Practicality", "Abundance", "Comfort"],
+    meanings: {
+      upright: "Nurturing, practicality, abundance, comfort, material security.",
+      reversed: "Overindulgence, materialism, neglect of emotional needs."
+    },
+    numerology: 13,
+    astrology: "Moon in Earth"
+  },
+  {
+    id: 77,
+    name: "King of Pentacles",
+    image: "/cards/king-of-pentacles.jpg",
+    keywords: ["Wealth", "Stability", "Business", "Material Success"],
+    meanings: {
+      upright: "Wealth, stability, business, material success, practical leadership.",
+      reversed: "Greedy, materialistic, miserly, lack of generosity."
+    },
+    numerology: 14,
+    astrology: "Jupiter in Earth"
   }
 ];
