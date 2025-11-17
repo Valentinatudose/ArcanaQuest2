@@ -1,11 +1,17 @@
+// constants.ts
 import { TarotCard } from './types';
+
+const createCardImagePath = (cardName: string): string => {
+  const formattedName = cardName.toLowerCase().replace(/\s+/g, '_');
+  return `/cards/${formattedName}.jpg`;
+};
 
 export const TAROT_DECK: TarotCard[] = [
   // === Major Arcana ===
   {
     id: 0,
     name: "The Fool",
-    image: "/cards/The_Fool.jpg",
+    image: createCardImagePath("The Fool"),
     keywords: ["Beginnings", "Innocence", "Spontaneity", "Freedom"],
     meanings: {
       upright: "New beginnings, innocence, spontaneity, free spirit.",
@@ -17,7 +23,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 1,
     name: "The Magician",
-    image: "/cards/The_Magician.jpg",
+    image: createCardImagePath("The Magician"),
     keywords: ["Manifestation", "Resourcefulness", "Power", "Will"],
     meanings: {
       upright: "Manifestation, resourcefulness, power, inspired action.",
@@ -29,7 +35,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 2,
     name: "The High Priestess",
-    image: "/cards/The_High_Priestess.jpg",
+    image: createCardImagePath("The High Priestess"),
     keywords: ["Intuition", "Mystery", "Sacred Knowledge", "Unconscious"],
     meanings: {
       upright: "Intuition, sacred knowledge, divine feminine, the subconscious mind.",
@@ -41,7 +47,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 3,
     name: "The Empress",
-    image: "/cards/The_Empress.jpg",
+    image: createCardImagePath("The Empress"),
     keywords: ["Femininity", "Abundance", "Nurturing", "Creativity"],
     meanings: {
       upright: "Femininity, beauty, nature, nurturing, abundance, fertility.",
@@ -53,7 +59,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 4,
     name: "The Emperor",
-    image: "/cards/The_Emperor.jpg",
+    image: createCardImagePath("The Emperor"),
     keywords: ["Authority", "Structure", "Control", "Fatherhood"],
     meanings: {
       upright: "Authority, structure, control, stability, leadership, fatherhood.",
@@ -65,7 +71,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 5,
     name: "The Hierophant",
-    image: "/cards/The_Hierophant.jpg",
+    image: createCardImagePath("The Hierophant"),
     keywords: ["Tradition", "Conformity", "Spirituality", "Institutions"],
     meanings: {
       upright: "Spiritual wisdom, religious beliefs, conformity, tradition, institutions.",
@@ -77,7 +83,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 6,
     name: "The Lovers",
-    image: "/cards/The_Lovers.jpg",
+    image: createCardImagePath("The Lovers"),
     keywords: ["Love", "Harmony", "Relationships", "Choices"],
     meanings: {
       upright: "Love, harmony, relationships, alignment of values, choices.",
@@ -89,7 +95,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 7,
     name: "The Chariot",
-    image: "/cards/The_Chariot.jpg",
+    image: createCardImagePath("The Chariot"),
     keywords: ["Control", "Willpower", "Victory", "Determination"],
     meanings: {
       upright: "Control, willpower, victory, assertion, determination.",
@@ -101,7 +107,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 8,
     name: "Strength",
-    image: "/cards/Strength.jpg",
+    image: createCardImagePath("Strength"),
     keywords: ["Courage", "Inner Strength", "Compassion", "Patience"],
     meanings: {
       upright: "Inner strength, courage, compassion, patience, influence.",
@@ -113,7 +119,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 9,
     name: "The Hermit",
-    image: "/cards/The_Hermit.jpg",
+    image: createCardImagePath("The Hermit"),
     keywords: ["Soul-searching", "Introspection", "Guidance", "Solitude"],
     meanings: {
       upright: "Soul-searching, introspection, guidance, inner wisdom, solitude.",
@@ -125,7 +131,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 10,
     name: "Wheel of Fortune",
-    image: "/cards/Wheel_of_Fortune.jpg",
+    image: createCardImagePath("Wheel of Fortune"),
     keywords: ["Change", "Cycles", "Fate", "Luck"],
     meanings: {
       upright: "Good luck, karma, destiny, turning point, cycles.",
@@ -137,7 +143,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 11,
     name: "Justice",
-    image: "/cards/Justice.jpg",
+    image: createCardImagePath("Justice"),
     keywords: ["Fairness", "Truth", "Law", "Cause and Effect"],
     meanings: {
       upright: "Fairness, truth, justice, law, accountability, cause and effect.",
@@ -149,7 +155,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 12,
     name: "The Hanged Man",
-    image: "/cards/The_Hanged_Man.jpg",
+    image: createCardImagePath("The Hanged Man"),
     keywords: ["Surrender", "New Perspective", "Letting Go", "Patience"],
     meanings: {
       upright: "Surrender, new perspective, letting go, patience, suspension.",
@@ -161,7 +167,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 13,
     name: "Death",
-    image: "/cards/Death.jpg",
+    image: createCardImagePath("Death"),
     keywords: ["Endings", "Change", "Transformation", "Rebirth"],
     meanings: {
       upright: "Endings, change, transformation, transition, rebirth.",
@@ -173,7 +179,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 14,
     name: "Temperance",
-    image: "/cards/Temperance.jpg",
+    image: createCardImagePath("Temperance"),
     keywords: ["Balance", "Patience", "Moderation", "Harmony"],
     meanings: {
       upright: "Balance, moderation, patience, harmony, purpose.",
@@ -185,7 +191,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 15,
     name: "The Devil",
-    image: "/cards/The_Devil.jpg",
+    image: createCardImagePath("The Devil"),
     keywords: ["Shadow Self", "Addiction", "Materialism", "Bondage"],
     meanings: {
       upright: "Shadow self, attachment, addiction, materialism, bondage.",
@@ -197,7 +203,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 16,
     name: "The Tower",
-    image: "/cards/The_Tower.jpg",
+    image: createCardImagePath("The Tower"),
     keywords: ["Sudden Change", "Upheaval", "Revelation", "Liberation"],
     meanings: {
       upright: "Sudden change, upheaval, chaos, revelation, liberation.",
@@ -209,7 +215,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 17,
     name: "The Star",
-    image: "/cards/The_Star.jpg",
+    image: createCardImagePath("The Star"),
     keywords: ["Hope", "Inspiration", "Faith", "Renewal"],
     meanings: {
       upright: "Hope, faith, purpose, renewal, spirituality, serenity.",
@@ -221,7 +227,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 18,
     name: "The Moon",
-    image: "/cards/The_Moon.jpg",
+    image: createCardImagePath("The Moon"),
     keywords: ["Illusion", "Fear", "Anxiety", "Unconscious"],
     meanings: {
       upright: "Illusion, fear, anxiety, unconscious, intuition.",
@@ -233,7 +239,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 19,
     name: "The Sun",
-    image: "/cards/The_Sun.jpg",
+    image: createCardImagePath("The Sun"),
     keywords: ["Joy", "Success", "Vitality", "Positivity"],
     meanings: {
       upright: "Joy, success, celebration, positivity, vitality, confidence.",
@@ -245,7 +251,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 20,
     name: "Judgement",
-    image: "/cards/Judgement.jpg",
+    image: createCardImagePath("Judgement"),
     keywords: ["Rebirth", "Reflection", "Awakening", "Absolution"],
     meanings: {
       upright: "Rebirth, inner calling, absolution, self-reflection, awakening.",
@@ -257,7 +263,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 21,
     name: "The World",
-    image: "/cards/The_World.jpg",
+    image: createCardImagePath("The World"),
     keywords: ["Completion", "Integration", "Wholeness", "Travel"],
     meanings: {
       upright: "Completion, integration, accomplishment, travel, wholeness.",
@@ -271,7 +277,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 22,
     name: "Ace of Cups",
-    image: "/cards/Ace_of_Cups.jpg",
+    image: createCardImagePath("Ace of Cups"),
     keywords: ["Love", "New Feelings", "Spirituality", "Intuition"],
     meanings: {
       upright: "New feelings, love, spirituality, intuition, emotional opportunities.",
@@ -283,7 +289,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 23,
     name: "Two of Cups",
-    image: "/cards/Two_of_Cups.jpg",
+    image: createCardImagePath("Two of Cups"),
     keywords: ["Union", "Partnership", "Connection", "Harmony"],
     meanings: {
       upright: "Union, partnership, connection, attraction, harmony.",
@@ -295,7 +301,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 24,
     name: "Three of Cups",
-    image: "/cards/Three_of_Cups.jpg",
+    image: createCardImagePath("Three of Cups"),
     keywords: ["Celebration", "Friendship", "Community", "Joy"],
     meanings: {
       upright: "Celebration, friendship, community, joy, socializing.",
@@ -307,7 +313,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 25,
     name: "Four of Cups",
-    image: "/cards/Four_of_Cups.jpg",
+    image: createCardImagePath("Four of Cups"),
     keywords: ["Apathy", "Discontent", "Boredom", "Indifference"],
     meanings: {
       upright: "Apathy, discontent, boredom, indifference, disengagement.",
@@ -319,7 +325,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 26,
     name: "Five of Cups",
-    image: "/cards/Five_of_Cups.jpg",
+    image: createCardImagePath("Five of Cups"),
     keywords: ["Loss", "Regret", "Disappointment", "Grief"],
     meanings: {
       upright: "Loss, regret, disappointment, grief, focusing on what's gone.",
@@ -331,7 +337,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 27,
     name: "Six of Cups",
-    image: "/cards/Six_of_Cups.jpg",
+    image: createCardImagePath("Six of Cups"),
     keywords: ["Nostalgia", "Childhood", "Innocence", "Memory"],
     meanings: {
       upright: "Nostalgia, childhood, innocence, memory, revisiting the past.",
@@ -343,7 +349,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 28,
     name: "Seven of Cups",
-    image: "/cards/Seven_of_Cups.jpg",
+    image: createCardImagePath("Seven of Cups"),
     keywords: ["Illusion", "Choice", "Fantasy", "Confusion"],
     meanings: {
       upright: "Illusion, choice, fantasy, confusion, daydreaming.",
@@ -355,7 +361,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 29,
     name: "Eight of Cups",
-    image: "/cards/Eight_of_Cups.jpg",
+    image: createCardImagePath("Eight of Cups"),
     keywords: ["Walking Away", "Letting Go", "Disillusionment", "Withdrawal"],
     meanings: {
       upright: "Walking away, letting go, disillusionment, withdrawal, seeking deeper meaning.",
@@ -367,7 +373,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 30,
     name: "Nine of Cups",
-    image: "/cards/Nine_of_Cups.jpg",
+    image: createCardImagePath("Nine of Cups"),
     keywords: ["Contentment", "Wishes Fulfilled", "Satisfaction", "Gratitude"],
     meanings: {
       upright: "Contentment, wishes fulfilled, satisfaction, gratitude, emotional fulfillment.",
@@ -379,7 +385,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 31,
     name: "Ten of Cups",
-    image: "/cards/Ten_of_Cups.jpg",
+    image: createCardImagePath("Ten of Cups"),
     keywords: ["Happiness", "Family", "Harmony", "Fulfillment"],
     meanings: {
       upright: "Happiness, family, harmony, fulfillment, emotional security.",
@@ -391,7 +397,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 32,
     name: "Page of Cups",
-    image: "/cards/Page_of_Cups.jpg",
+    image: createCardImagePath("Page of Cups"),
     keywords: ["Emotional Growth", "Intuition", "New Feelings", "Creativity"],
     meanings: {
       upright: "Emotional growth, intuition, new feelings, creativity, sensitivity.",
@@ -403,7 +409,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 33,
     name: "Knight of Cups",
-    image: "/cards/Knight_of_Cups.jpg",
+    image: createCardImagePath("Knight of Cups"),
     keywords: ["Romance", "Charm", "Idealism", "Emotional Journey"],
     meanings: {
       upright: "Romance, charm, idealism, emotional journey, artistic expression.",
@@ -415,7 +421,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 34,
     name: "Queen of Cups",
-    image: "/cards/Queen_of_Cups.jpg",
+    image: createCardImagePath("Queen of Cups"),
     keywords: ["Compassion", "Intuition", "Nurturing", "Empathy"],
     meanings: {
       upright: "Compassion, intuition, nurturing, empathy, emotional support.",
@@ -427,7 +433,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 35,
     name: "King of Cups",
-    image: "/cards/King_of_Cups.jpg",
+    image: createCardImagePath("King of Cups"),
     keywords: ["Emotional Maturity", "Compassion", "Balance", "Wisdom"],
     meanings: {
       upright: "Emotional maturity, compassion, balance, wisdom, emotional control.",
@@ -441,7 +447,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 36,
     name: "Ace of Wands",
-    image: "/cards/Ace_of_Wands.jpg",
+    image: createCardImagePath("Ace of Wands"),
     keywords: ["Inspiration", "New Opportunities", "Growth", "Potential"],
     meanings: {
       upright: "Inspiration, new opportunities, growth, potential, passion.",
@@ -453,7 +459,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 37,
     name: "Two of Wands",
-    image: "/cards/Two_of_Wands.jpg",
+    image: createCardImagePath("Two of Wands"),
     keywords: ["Future Planning", "Progress", "Decisions", "Discovery"],
     meanings: {
       upright: "Future planning, progress, decisions, discovery, expansion.",
@@ -465,7 +471,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 38,
     name: "Three of Wands",
-    image: "/cards/Three_of_Wands.jpg",
+    image: createCardImagePath("Three of Wands"),
     keywords: ["Expansion", "Planning", "Teamwork", "Vision"],
     meanings: {
       upright: "Expansion, planning, teamwork, vision, looking ahead.",
@@ -477,7 +483,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 39,
     name: "Four of Wands",
-    image: "/cards/Four_of_Wands.jpg",
+    image: createCardImagePath("Four of Wands"),
     keywords: ["Celebration", "Stability", "Home", "Foundation"],
     meanings: {
       upright: "Celebration, stability, home, foundation, harmony.",
@@ -489,7 +495,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 40,
     name: "Five of Wands",
-    image: "/cards/Five_of_Wands.jpg",
+    image: createCardImagePath("Five of Wands"),
     keywords: ["Conflict", "Competition", "Struggle", "Challenge"],
     meanings: {
       upright: "Conflict, competition, struggle, challenge, testing boundaries.",
@@ -501,7 +507,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 41,
     name: "Six of Wands",
-    image: "/cards/Six_of_Wands.jpg",
+    image: createCardImagePath("Six of Wands"),
     keywords: ["Victory", "Recognition", "Success", "Celebration"],
     meanings: {
       upright: "Victory, recognition, success, celebration, public approval.",
@@ -513,7 +519,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 42,
     name: "Seven of Wands",
-    image: "/cards/Seven_of_Wands.jpg",
+    image: createCardImagePath("Seven of Wands"),
     keywords: ["Defense", "Perseverance", "Stand Your Ground", "Resilience"],
     meanings: {
       upright: "Defense, perseverance, stand your ground, resilience, overcoming obstacles.",
@@ -525,7 +531,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 43,
     name: "Eight of Wands",
-    image: "/cards/Eight_of_Wands.jpg",
+    image: createCardImagePath("Eight of Wands"),
     keywords: ["Speed", "Action", "Progress", "Movement"],
     meanings: {
       upright: "Speed, action, progress, movement, quick results.",
@@ -537,7 +543,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 44,
     name: "Nine of Wands",
-    image: "/cards/Nine_of_Wands.jpg",
+    image: createCardImagePath("Nine of Wands"),
     keywords: ["Endurance", "Resilience", "Last Stand", "Preparation"],
     meanings: {
       upright: "Endurance, resilience, last stand, preparation, guard your position.",
@@ -549,7 +555,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 45,
     name: "Ten of Wands",
-    image: "/cards/Ten_of_Wands.jpg",
+    image: createCardImagePath("Ten of Wands"),
     keywords: ["Burden", "Responsibility", "Overwhelm", "Commitment"],
     meanings: {
       upright: "Burden, responsibility, overwhelm, commitment, carrying weight.",
@@ -561,7 +567,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 46,
     name: "Page of Wands",
-    image: "/cards/Page_of_Wands.jpg",
+    image: createCardImagePath("Page of Wands"),
     keywords: ["Enthusiasm", "Adventure", "New Ideas", "Energy"],
     meanings: {
       upright: "Enthusiasm, adventure, new ideas, energy, curiosity.",
@@ -573,7 +579,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 47,
     name: "Knight of Wands",
-    image: "/cards/Knight_of_Wands.jpg",
+    image: createCardImagePath("Knight of Wands"),
     keywords: ["Action", "Passion", "Adventure", "Impulsiveness"],
     meanings: {
       upright: "Action, passion, adventure, impulsiveness, bold moves.",
@@ -585,7 +591,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 48,
     name: "Queen of Wands",
-    image: "/cards/Queen_of_Wands.jpg",
+    image: createCardImagePath("Queen of Wands"),
     keywords: ["Confidence", "Charisma", "Leadership", "Passion"],
     meanings: {
       upright: "Confidence, charisma, leadership, passion, warmth.",
@@ -597,7 +603,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 49,
     name: "King of Wands",
-    image: "/cards/King_of_Wands.jpg",
+    image: createCardImagePath("King of Wands"),
     keywords: ["Leadership", "Vision", "Courage", "Inspiration"],
     meanings: {
       upright: "Leadership, vision, courage, inspiration, dynamic energy.",
@@ -611,7 +617,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 50,
     name: "Ace of Swords",
-    image: "/cards/Ace_of_Swords.jpg",
+    image: createCardImagePath("Ace of Swords"),
     keywords: ["Clarity", "Breakthrough", "Truth", "Mental Power"],
     meanings: {
       upright: "Clarity, breakthrough, truth, mental power, new ideas.",
@@ -623,7 +629,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 51,
     name: "Two of Swords",
-    image: "/cards/Two_of_Swords.jpg",
+    image: createCardImagePath("Two of Swords"),
     keywords: ["Indecision", "Stalemate", "Balance", "Avoidance"],
     meanings: {
       upright: "Indecision, stalemate, balance, avoidance, weighing options.",
@@ -635,7 +641,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 52,
     name: "Three of Swords",
-    image: "/cards/Three_of_Swords.jpg",
+    image: createCardImagePath("Three of Swords"),
     keywords: ["Heartbreak", "Pain", "Sorrow", "Betrayal"],
     meanings: {
       upright: "Heartbreak, pain, sorrow, betrayal, emotional wound.",
@@ -647,7 +653,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 53,
     name: "Four of Swords",
-    image: "/cards/Four_of_Swords.jpg",
+    image: createCardImagePath("Four of Swords"),
     keywords: ["Rest", "Recovery", "Peace", "Meditation"],
     meanings: {
       upright: "Rest, recovery, peace, meditation, retreat, healing.",
@@ -659,7 +665,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 54,
     name: "Five of Swords",
-    image: "/cards/Five_of_Swords.jpg",
+    image: createCardImagePath("Five of Swords"),
     keywords: ["Conflict", "Defeat", "Aggression", "Win at All Costs"],
     meanings: {
       upright: "Conflict, defeat, aggression, win at all costs, verbal sparring.",
@@ -671,7 +677,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 55,
     name: "Six of Swords",
-    image: "/cards/Six_of_Swords.jpg",
+    image: createCardImagePath("Six of Swords"),
     keywords: ["Transition", "Move On", "Progress", "Healing"],
     meanings: {
       upright: "Transition, move on, progress, healing, leaving the past behind.",
@@ -683,7 +689,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 56,
     name: "Seven of Swords",
-    image: "/cards/Seven_of_Swords.jpg",
+    image: createCardImagePath("Seven of Swords"),
     keywords: ["Deception", "Stealth", "Strategy", "Trickery"],
     meanings: {
       upright: "Deception, stealth, strategy, trickery, bending the rules.",
@@ -695,7 +701,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 57,
     name: "Eight of Swords",
-    image: "/cards/Eight_of_Swords.jpg",
+    image: createCardImagePath("Eight of Swords"),
     keywords: ["Trapped", "Limitation", "Restriction", "Fear"],
     meanings: {
       upright: "Trapped, limitation, restriction, fear, self-imposed prison.",
@@ -707,7 +713,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 58,
     name: "Nine of Swords",
-    image: "/cards/Nine_of_Swords.jpg",
+    image: createCardImagePath("Nine of Swords"),
     keywords: ["Anxiety", "Nightmares", "Worry", "Guilt"],
     meanings: {
       upright: "Anxiety, nightmares, worry, guilt, mental anguish.",
@@ -719,7 +725,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 59,
     name: "Ten of Swords",
-    image: "/cards/Ten_of_Swords.jpg",
+    image: createCardImagePath("Ten of Swords"),
     keywords: ["End", "Finality", "Devastation", "Release"],
     meanings: {
       upright: "End, finality, devastation, release, hitting rock bottom.",
@@ -731,7 +737,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 60,
     name: "Page of Swords",
-    image: "/cards/Page_of_Swords.jpg",
+    image: createCardImagePath("Page of Swords"),
     keywords: ["Curiosity", "Intellect", "Alertness", "New Ideas"],
     meanings: {
       upright: "Curiosity, intellect, alertness, new ideas, sharp mind.",
@@ -743,7 +749,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 61,
     name: "Knight of Swords",
-    image: "/cards/Knight_of_Swords.jpg",
+    image: createCardImagePath("Knight of Swords"),
     keywords: ["Action", "Aggression", "Directness", "Impulsiveness"],
     meanings: {
       upright: "Action, aggression, directness, impulsiveness, charging forward.",
@@ -755,7 +761,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 62,
     name: "Queen of Swords",
-    image: "/cards/Queen_of_Swords.jpg",
+    image: createCardImagePath("Queen of Swords"),
     keywords: ["Clarity", "Truth", "Independence", "Sharp Mind"],
     meanings: {
       upright: "Clarity, truth, independence, sharp mind, cutting through illusions.",
@@ -767,7 +773,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 63,
     name: "King of Swords",
-    image: "/cards/King_of_Swords.jpg",
+    image: createCardImagePath("King of Swords"),
     keywords: ["Logic", "Authority", "Justice", "Intellect"],
     meanings: {
       upright: "Logic, authority, justice, intellect, clear thinking.",
@@ -781,7 +787,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 64,
     name: "Ace of Pentacles",
-    image: "/cards/Ace_of_Pentacles.jpg",
+    image: createCardImagePath("Ace of Pentacles"),
     keywords: ["Opportunity", "Prosperity", "New Ventures", "Wealth"],
     meanings: {
       upright: "Opportunity, prosperity, new ventures, wealth, manifestation.",
@@ -793,7 +799,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 65,
     name: "Two of Pentacles",
-    image: "/cards/Two_of_Pentacles.jpg",
+    image: createCardImagePath("Two of Pentacles"),
     keywords: ["Balance", "Adaptability", "Juggling", "Flexibility"],
     meanings: {
       upright: "Balance, adaptability, juggling, flexibility, managing multiple priorities.",
@@ -805,7 +811,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 66,
     name: "Three of Pentacles",
-    image: "/cards/Three_of_Pentacles.jpg",
+    image: createCardImagePath("Three of Pentacles"),
     keywords: ["Teamwork", "Skill", "Collaboration", "Mastery"],
     meanings: {
       upright: "Teamwork, skill, collaboration, mastery, building something together.",
@@ -817,7 +823,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 67,
     name: "Four of Pentacles",
-    image: "/cards/Four_of_Pentacles.jpg",
+    image: createCardImagePath("Four of Pentacles"),
     keywords: ["Security", "Possession", "Conservatism", "Hoarding"],
     meanings: {
       upright: "Security, possession, conservatism, hoarding, material stability.",
@@ -829,7 +835,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 68,
     name: "Five of Pentacles",
-    image: "/cards/Five_of_Pentacles.jpg",
+    image: createCardImagePath("Five of Pentacles"),
     keywords: ["Hardship", "Poverty", "Exclusion", "Struggle"],
     meanings: {
       upright: "Hardship, poverty, exclusion, struggle, feeling left out.",
@@ -841,7 +847,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 69,
     name: "Six of Pentacles",
-    image: "/cards/Six_of_Pentacles.jpg",
+    image: createCardImagePath("Six of Pentacles"),
     keywords: ["Generosity", "Charity", "Giving", "Receiving"],
     meanings: {
       upright: "Generosity, charity, giving, receiving, balance of exchange.",
@@ -853,7 +859,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 70,
     name: "Seven of Pentacles",
-    image: "/cards/Seven_of_Pentacles.jpg",
+    image: createCardImagePath("Seven of Pentacles"),
     keywords: ["Patience", "Evaluation", "Long-Term Goals", "Waiting"],
     meanings: {
       upright: "Patience, evaluation, long-term goals, waiting for results.",
@@ -865,7 +871,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 71,
     name: "Eight of Pentacles",
-    image: "/cards/Eight_of_Pentacles.jpg",
+    image: createCardImagePath("Eight of Pentacles"),
     keywords: ["Dedication", "Skill", "Mastery", "Hard Work"],
     meanings: {
       upright: "Dedication, skill, mastery, hard work, attention to detail.",
@@ -877,7 +883,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 72,
     name: "Nine of Pentacles",
-    image: "/cards/Nine_of_Pentacles.jpg",
+    image: createCardImagePath("Nine of Pentacles"),
     keywords: ["Independence", "Self-Sufficiency", "Luxury", "Reward"],
     meanings: {
       upright: "Independence, self-sufficiency, luxury, reward, enjoying the fruits of labor.",
@@ -889,7 +895,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 73,
     name: "Ten of Pentacles",
-    image: "/cards/Ten_of_Pentacles.jpg",
+    image: createCardImagePath("Ten of Pentacles"),
     keywords: ["Legacy", "Wealth", "Family", "Abundance"],
     meanings: {
       upright: "Legacy, wealth, family, abundance, long-term security.",
@@ -901,7 +907,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 74,
     name: "Page of Pentacles",
-    image: "/cards/Page_of_Pentacles.jpg",
+    image: createCardImagePath("Page of Pentacles"),
     keywords: ["Practicality", "Learning", "New Skills", "Material Focus"],
     meanings: {
       upright: "Practicality, learning, new skills, material focus, grounded approach.",
@@ -913,7 +919,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 75,
     name: "Knight of Pentacles",
-    image: "/cards/Knight_of_Pentacles.jpg",
+    image: createCardImagePath("Knight of Pentacles"),
     keywords: ["Diligence", "Reliability", "Consistency", "Hard Work"],
     meanings: {
       upright: "Diligence, reliability, consistency, hard work, slow but steady progress.",
@@ -925,7 +931,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 76,
     name: "Queen of Pentacles",
-    image: "/cards/Queen_of_Pentacles.jpg",
+    image: createCardImagePath("Queen of Pentacles"),
     keywords: ["Nurturing", "Practicality", "Abundance", "Comfort"],
     meanings: {
       upright: "Nurturing, practicality, abundance, comfort, material security.",
@@ -937,7 +943,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 77,
     name: "King of Pentacles",
-    image: "/cards/King_of_Pentacles.jpg",
+    image: createCardImagePath("King of Pentacles"),
     keywords: ["Wealth", "Stability", "Business", "Material Success"],
     meanings: {
       upright: "Wealth, stability, business, material success, practical leadership.",
