@@ -5,7 +5,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 0,
     name: "The Fool",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/The_Fool.jpg/200px-The_Fool.jpg",
+    image: "/cards/The_Fool.jpg",
     keywords: ["Beginnings", "Innocence", "Spontaneity", "Freedom"],
     meanings: {
       upright: "New beginnings, innocence, spontaneity, free spirit.",
@@ -17,7 +17,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 1,
     name: "The Magician",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Magician.jpg/200px-The_Magician.jpg",
+    image: "/cards/The_Magician.jpg",
     keywords: ["Manifestation", "Resourcefulness", "Power", "Will"],
     meanings: {
       upright: "Manifestation, resourcefulness, power, inspired action.",
@@ -29,7 +29,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 2,
     name: "The High Priestess",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/The_High_Priestess.jpg/200px-The_High_Priestess.jpg",
+    image: "/cards/The_High_Priestess.jpg",
     keywords: ["Intuition", "Mystery", "Sacred Knowledge", "Unconscious"],
     meanings: {
       upright: "Intuition, sacred knowledge, divine feminine, the subconscious mind.",
@@ -41,7 +41,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 3,
     name: "The Empress",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/The_Empress.jpg/200px-The_Empress.jpg",
+    image: "/cards/The_Empress.jpg",
     keywords: ["Femininity", "Abundance", "Nurturing", "Creativity"],
     meanings: {
       upright: "Femininity, beauty, nature, nurturing, abundance, fertility.",
@@ -53,7 +53,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 4,
     name: "The Emperor",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/The_Emperor.jpg/200px-The_Emperor.jpg",
+    image: "/cards/The_Emperor.jpg",
     keywords: ["Authority", "Structure", "Control", "Fatherhood"],
     meanings: {
       upright: "Authority, structure, control, stability, leadership, fatherhood.",
@@ -65,7 +65,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 5,
     name: "The Hierophant",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Hierophant.jpg/200px-The_Hierophant.jpg",
+    image: "/cards/The_Hierophant.jpg",
     keywords: ["Tradition", "Conformity", "Spirituality", "Institutions"],
     meanings: {
       upright: "Spiritual wisdom, religious beliefs, conformity, tradition, institutions.",
@@ -77,7 +77,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 6,
     name: "The Lovers",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/The_Lovers.jpg/200px-The_Lovers.jpg",
+    image: "/cards/The_Lovers.jpg",
     keywords: ["Love", "Harmony", "Relationships", "Choices"],
     meanings: {
       upright: "Love, harmony, relationships, alignment of values, choices.",
@@ -89,7 +89,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 7,
     name: "The Chariot",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Chariot.jpg/200px-The_Chariot.jpg",
+    image: "/cards/The_Chariot.jpg",
     keywords: ["Control", "Willpower", "Victory", "Determination"],
     meanings: {
       upright: "Control, willpower, victory, assertion, determination.",
@@ -101,7 +101,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 8,
     name: "Strength",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Strength.jpg/200px-Strength.jpg",
+    image: "/cards/Strength.jpg",
     keywords: ["Courage", "Inner Strength", "Compassion", "Patience"],
     meanings: {
       upright: "Inner strength, courage, compassion, patience, influence.",
@@ -113,7 +113,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 9,
     name: "The Hermit",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Hermit.jpg/200px-The_Hermit.jpg",
+    image: "/cards/The_Hermit.jpg",
     keywords: ["Soul-searching", "Introspection", "Guidance", "Solitude"],
     meanings: {
       upright: "Soul-searching, introspection, guidance, inner wisdom, solitude.",
@@ -125,7 +125,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 10,
     name: "Wheel of Fortune",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Wheel_of_Fortune.jpg/200px-Wheel_of_Fortune.jpg",
+    image: "/cards/Wheel_of_Fortune.jpg",
     keywords: ["Change", "Cycles", "Fate", "Luck"],
     meanings: {
       upright: "Good luck, karma, destiny, turning point, cycles.",
@@ -137,7 +137,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 11,
     name: "Justice",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Justice.jpg/200px-Justice.jpg",
+    image: "/cards/Justice.jpg",
     keywords: ["Fairness", "Truth", "Law", "Cause and Effect"],
     meanings: {
       upright: "Fairness, truth, justice, law, accountability, cause and effect.",
@@ -149,7 +149,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 12,
     name: "The Hanged Man",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/The_Hanged_Man.jpg/200px-The_Hanged_Man.jpg",
+    image: "/cards/The_Hanged_Man.jpg",
     keywords: ["Surrender", "New Perspective", "Letting Go", "Patience"],
     meanings: {
       upright: "Surrender, new perspective, letting go, patience, suspension.",
@@ -161,7 +161,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 13,
     name: "Death",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Death.jpg/200px-Death.jpg",
+    image: "/cards/Death.jpg",
     keywords: ["Endings", "Change", "Transformation", "Rebirth"],
     meanings: {
       upright: "Endings, change, transformation, transition, rebirth.",
@@ -173,7 +173,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 14,
     name: "Temperance",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Temperance.jpg/200px-Temperance.jpg",
+    image: "/cards/Temperance.jpg",
     keywords: ["Balance", "Patience", "Moderation", "Harmony"],
     meanings: {
       upright: "Balance, moderation, patience, harmony, purpose.",
@@ -185,7 +185,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 15,
     name: "The Devil",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Devil.jpg/200px-The_Devil.jpg",
+    image: "/cards/The_Devil.jpg",
     keywords: ["Shadow Self", "Addiction", "Materialism", "Bondage"],
     meanings: {
       upright: "Shadow self, attachment, addiction, materialism, bondage.",
@@ -197,7 +197,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 16,
     name: "The Tower",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/The_Tower.jpg/200px-The_Tower.jpg",
+    image: "/cards/The_Tower.jpg",
     keywords: ["Sudden Change", "Upheaval", "Revelation", "Liberation"],
     meanings: {
       upright: "Sudden change, upheaval, chaos, revelation, liberation.",
@@ -209,7 +209,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 17,
     name: "The Star",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/The_Star.jpg/200px-The_Star.jpg",
+    image: "/cards/The_Star.jpg",
     keywords: ["Hope", "Inspiration", "Faith", "Renewal"],
     meanings: {
       upright: "Hope, faith, purpose, renewal, spirituality, serenity.",
@@ -221,7 +221,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 18,
     name: "The Moon",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/The_Moon.jpg/200px-The_Moon.jpg",
+    image: "/cards/The_Moon.jpg",
     keywords: ["Illusion", "Fear", "Anxiety", "Unconscious"],
     meanings: {
       upright: "Illusion, fear, anxiety, unconscious, intuition.",
@@ -233,7 +233,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 19,
     name: "The Sun",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_Sun.jpg/200px-The_Sun.jpg",
+    image: "/cards/The_Sun.jpg",
     keywords: ["Joy", "Success", "Vitality", "Positivity"],
     meanings: {
       upright: "Joy, success, celebration, positivity, vitality, confidence.",
@@ -245,7 +245,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 20,
     name: "Judgement",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Judgement.jpg/200px-Judgement.jpg",
+    image: "/cards/Judgement.jpg",
     keywords: ["Rebirth", "Reflection", "Awakening", "Absolution"],
     meanings: {
       upright: "Rebirth, inner calling, absolution, self-reflection, awakening.",
@@ -257,7 +257,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 21,
     name: "The World",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_World.jpg/200px-The_World.jpg",
+    image: "/cards/The_World.jpg",
     keywords: ["Completion", "Integration", "Wholeness", "Travel"],
     meanings: {
       upright: "Completion, integration, accomplishment, travel, wholeness.",
@@ -271,7 +271,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 22,
     name: "Ace of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Ace_of_Cups.jpg/200px-Ace_of_Cups.jpg",
+    image: "/cards/Ace_of_Cups.jpg",
     keywords: ["Love", "New Feelings", "Spirituality", "Intuition"],
     meanings: {
       upright: "New feelings, love, spirituality, intuition, emotional opportunities.",
@@ -283,7 +283,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 23,
     name: "Two of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Two_of_Cups.jpg/200px-Two_of_Cups.jpg",
+    image: "/cards/Two_of_Cups.jpg",
     keywords: ["Union", "Partnership", "Connection", "Harmony"],
     meanings: {
       upright: "Union, partnership, connection, attraction, harmony.",
@@ -295,7 +295,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 24,
     name: "Three of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Three_of_Cups.jpg/200px-Three_of_Cups.jpg",
+    image: "/cards/Three_of_Cups.jpg",
     keywords: ["Celebration", "Friendship", "Community", "Joy"],
     meanings: {
       upright: "Celebration, friendship, community, joy, socializing.",
@@ -307,7 +307,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 25,
     name: "Four of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Four_of_Cups.jpg/200px-Four_of_Cups.jpg",
+    image: "/cards/Four_of_Cups.jpg",
     keywords: ["Apathy", "Discontent", "Boredom", "Indifference"],
     meanings: {
       upright: "Apathy, discontent, boredom, indifference, disengagement.",
@@ -319,7 +319,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 26,
     name: "Five of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Five_of_Cups.jpg/200px-Five_of_Cups.jpg",
+    image: "/cards/Five_of_Cups.jpg",
     keywords: ["Loss", "Regret", "Disappointment", "Grief"],
     meanings: {
       upright: "Loss, regret, disappointment, grief, focusing on what's gone.",
@@ -331,7 +331,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 27,
     name: "Six of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Six_of_Cups.jpg/200px-Six_of_Cups.jpg",
+    image: "/cards/Six_of_Cups.jpg",
     keywords: ["Nostalgia", "Childhood", "Innocence", "Memory"],
     meanings: {
       upright: "Nostalgia, childhood, innocence, memory, revisiting the past.",
@@ -343,7 +343,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 28,
     name: "Seven of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Seven_of_Cups.jpg/200px-Seven_of_Cups.jpg",
+    image: "/cards/Seven_of_Cups.jpg",
     keywords: ["Illusion", "Choice", "Fantasy", "Confusion"],
     meanings: {
       upright: "Illusion, choice, fantasy, confusion, daydreaming.",
@@ -355,7 +355,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 29,
     name: "Eight of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Eight_of_Cups.jpg/200px-Eight_of_Cups.jpg",
+    image: "/cards/Eight_of_Cups.jpg",
     keywords: ["Walking Away", "Letting Go", "Disillusionment", "Withdrawal"],
     meanings: {
       upright: "Walking away, letting go, disillusionment, withdrawal, seeking deeper meaning.",
@@ -367,7 +367,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 30,
     name: "Nine of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Nine_of_Cups.jpg/200px-Nine_of_Cups.jpg",
+    image: "/cards/Nine_of_Cups.jpg",
     keywords: ["Contentment", "Wishes Fulfilled", "Satisfaction", "Gratitude"],
     meanings: {
       upright: "Contentment, wishes fulfilled, satisfaction, gratitude, emotional fulfillment.",
@@ -379,7 +379,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 31,
     name: "Ten of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Ten_of_Cups.jpg/200px-Ten_of_Cups.jpg",
+    image: "/cards/Ten_of_Cups.jpg",
     keywords: ["Happiness", "Family", "Harmony", "Fulfillment"],
     meanings: {
       upright: "Happiness, family, harmony, fulfillment, emotional security.",
@@ -391,7 +391,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 32,
     name: "Page of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Page_of_Cups.jpg/200px-Page_of_Cups.jpg",
+    image: "/cards/Page_of_Cups.jpg",
     keywords: ["Emotional Growth", "Intuition", "New Feelings", "Creativity"],
     meanings: {
       upright: "Emotional growth, intuition, new feelings, creativity, sensitivity.",
@@ -403,7 +403,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 33,
     name: "Knight of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Knight_of_Cups.jpg/200px-Knight_of_Cups.jpg",
+    image: "/cards/Knight_of_Cups.jpg",
     keywords: ["Romance", "Charm", "Idealism", "Emotional Journey"],
     meanings: {
       upright: "Romance, charm, idealism, emotional journey, artistic expression.",
@@ -415,7 +415,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 34,
     name: "Queen of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Queen_of_Cups.jpg/200px-Queen_of_Cups.jpg",
+    image: "/cards/Queen_of_Cups.jpg",
     keywords: ["Compassion", "Intuition", "Nurturing", "Empathy"],
     meanings: {
       upright: "Compassion, intuition, nurturing, empathy, emotional support.",
@@ -427,7 +427,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 35,
     name: "King of Cups",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/King_of_Cups.jpg/200px-King_of_Cups.jpg",
+    image: "/cards/King_of_Cups.jpg",
     keywords: ["Emotional Maturity", "Compassion", "Balance", "Wisdom"],
     meanings: {
       upright: "Emotional maturity, compassion, balance, wisdom, emotional control.",
@@ -441,7 +441,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 36,
     name: "Ace of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Ace_of_Wands.jpg/200px-Ace_of_Wands.jpg",
+    image: "/cards/Ace_of_Wands.jpg",
     keywords: ["Inspiration", "New Opportunities", "Growth", "Potential"],
     meanings: {
       upright: "Inspiration, new opportunities, growth, potential, passion.",
@@ -453,7 +453,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 37,
     name: "Two of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Two_of_Wands.jpg/200px-Two_of_Wands.jpg",
+    image: "/cards/Two_of_Wands.jpg",
     keywords: ["Future Planning", "Progress", "Decisions", "Discovery"],
     meanings: {
       upright: "Future planning, progress, decisions, discovery, expansion.",
@@ -465,7 +465,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 38,
     name: "Three of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Three_of_Wands.jpg/200px-Three_of_Wands.jpg",
+    image: "/cards/Three_of_Wands.jpg",
     keywords: ["Expansion", "Planning", "Teamwork", "Vision"],
     meanings: {
       upright: "Expansion, planning, teamwork, vision, looking ahead.",
@@ -477,7 +477,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 39,
     name: "Four of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Four_of_Wands.jpg/200px-Four_of_Wands.jpg",
+    image: "/cards/Four_of_Wands.jpg",
     keywords: ["Celebration", "Stability", "Home", "Foundation"],
     meanings: {
       upright: "Celebration, stability, home, foundation, harmony.",
@@ -489,7 +489,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 40,
     name: "Five of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Five_of_Wands.jpg/200px-Five_of_Wands.jpg",
+    image: "/cards/Five_of_Wands.jpg",
     keywords: ["Conflict", "Competition", "Struggle", "Challenge"],
     meanings: {
       upright: "Conflict, competition, struggle, challenge, testing boundaries.",
@@ -501,7 +501,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 41,
     name: "Six of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Six_of_Wands.jpg/200px-Six_of_Wands.jpg",
+    image: "/cards/Six_of_Wands.jpg",
     keywords: ["Victory", "Recognition", "Success", "Celebration"],
     meanings: {
       upright: "Victory, recognition, success, celebration, public approval.",
@@ -513,7 +513,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 42,
     name: "Seven of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Seven_of_Wands.jpg/200px-Seven_of_Wands.jpg",
+    image: "/cards/Seven_of_Wands.jpg",
     keywords: ["Defense", "Perseverance", "Stand Your Ground", "Resilience"],
     meanings: {
       upright: "Defense, perseverance, stand your ground, resilience, overcoming obstacles.",
@@ -525,7 +525,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 43,
     name: "Eight of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Eight_of_Wands.jpg/200px-Eight_of_Wands.jpg",
+    image: "/cards/Eight_of_Wands.jpg",
     keywords: ["Speed", "Action", "Progress", "Movement"],
     meanings: {
       upright: "Speed, action, progress, movement, quick results.",
@@ -537,7 +537,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 44,
     name: "Nine of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nine_of_Wands.jpg/200px-Nine_of_Wands.jpg",
+    image: "/cards/Nine_of_Wands.jpg",
     keywords: ["Endurance", "Resilience", "Last Stand", "Preparation"],
     meanings: {
       upright: "Endurance, resilience, last stand, preparation, guard your position.",
@@ -549,7 +549,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 45,
     name: "Ten of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ten_of_Wands.jpg/200px-Ten_of_Wands.jpg",
+    image: "/cards/Ten_of_Wands.jpg",
     keywords: ["Burden", "Responsibility", "Overwhelm", "Commitment"],
     meanings: {
       upright: "Burden, responsibility, overwhelm, commitment, carrying weight.",
@@ -561,7 +561,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 46,
     name: "Page of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Page_of_Wands.jpg/200px-Page_of_Wands.jpg",
+    image: "/cards/Page_of_Wands.jpg",
     keywords: ["Enthusiasm", "Adventure", "New Ideas", "Energy"],
     meanings: {
       upright: "Enthusiasm, adventure, new ideas, energy, curiosity.",
@@ -573,7 +573,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 47,
     name: "Knight of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Knight_of_Wands.jpg/200px-Knight_of_Wands.jpg",
+    image: "/cards/Knight_of_Wands.jpg",
     keywords: ["Action", "Passion", "Adventure", "Impulsiveness"],
     meanings: {
       upright: "Action, passion, adventure, impulsiveness, bold moves.",
@@ -585,7 +585,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 48,
     name: "Queen of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Queen_of_Wands.jpg/200px-Queen_of_Wands.jpg",
+    image: "/cards/Queen_of_Wands.jpg",
     keywords: ["Confidence", "Charisma", "Leadership", "Passion"],
     meanings: {
       upright: "Confidence, charisma, leadership, passion, warmth.",
@@ -597,7 +597,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 49,
     name: "King of Wands",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/King_of_Wands.jpg/200px-King_of_Wands.jpg",
+    image: "/cards/King_of_Wands.jpg",
     keywords: ["Leadership", "Vision", "Courage", "Inspiration"],
     meanings: {
       upright: "Leadership, vision, courage, inspiration, dynamic energy.",
@@ -611,7 +611,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 50,
     name: "Ace of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Ace_of_Swords.jpg/200px-Ace_of_Swords.jpg",
+    image: "/cards/Ace_of_Swords.jpg",
     keywords: ["Clarity", "Breakthrough", "Truth", "Mental Power"],
     meanings: {
       upright: "Clarity, breakthrough, truth, mental power, new ideas.",
@@ -623,7 +623,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 51,
     name: "Two of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Two_of_Swords.jpg/200px-Two_of_Swords.jpg",
+    image: "/cards/Two_of_Swords.jpg",
     keywords: ["Indecision", "Stalemate", "Balance", "Avoidance"],
     meanings: {
       upright: "Indecision, stalemate, balance, avoidance, weighing options.",
@@ -635,7 +635,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 52,
     name: "Three of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Three_of_Swords.jpg/200px-Three_of_Swords.jpg",
+    image: "/cards/Three_of_Swords.jpg",
     keywords: ["Heartbreak", "Pain", "Sorrow", "Betrayal"],
     meanings: {
       upright: "Heartbreak, pain, sorrow, betrayal, emotional wound.",
@@ -647,7 +647,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 53,
     name: "Four of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Four_of_Swords.jpg/200px-Four_of_Swords.jpg",
+    image: "/cards/Four_of_Swords.jpg",
     keywords: ["Rest", "Recovery", "Peace", "Meditation"],
     meanings: {
       upright: "Rest, recovery, peace, meditation, retreat, healing.",
@@ -659,7 +659,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 54,
     name: "Five of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Five_of_Swords.jpg/200px-Five_of_Swords.jpg",
+    image: "/cards/Five_of_Swords.jpg",
     keywords: ["Conflict", "Defeat", "Aggression", "Win at All Costs"],
     meanings: {
       upright: "Conflict, defeat, aggression, win at all costs, verbal sparring.",
@@ -671,7 +671,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 55,
     name: "Six of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Six_of_Swords.jpg/200px-Six_of_Swords.jpg",
+    image: "/cards/Six_of_Swords.jpg",
     keywords: ["Transition", "Move On", "Progress", "Healing"],
     meanings: {
       upright: "Transition, move on, progress, healing, leaving the past behind.",
@@ -683,7 +683,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 56,
     name: "Seven of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Seven_of_Swords.jpg/200px-Seven_of_Swords.jpg",
+    image: "/cards/Seven_of_Swords.jpg",
     keywords: ["Deception", "Stealth", "Strategy", "Trickery"],
     meanings: {
       upright: "Deception, stealth, strategy, trickery, bending the rules.",
@@ -695,7 +695,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 57,
     name: "Eight of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Eight_of_Swords.jpg/200px-Eight_of_Swords.jpg",
+    image: "/cards/Eight_of_Swords.jpg",
     keywords: ["Trapped", "Limitation", "Restriction", "Fear"],
     meanings: {
       upright: "Trapped, limitation, restriction, fear, self-imposed prison.",
@@ -707,7 +707,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 58,
     name: "Nine of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nine_of_Swords.jpg/200px-Nine_of_Swords.jpg",
+    image: "/cards/Nine_of_Swords.jpg",
     keywords: ["Anxiety", "Nightmares", "Worry", "Guilt"],
     meanings: {
       upright: "Anxiety, nightmares, worry, guilt, mental anguish.",
@@ -719,7 +719,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 59,
     name: "Ten of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ten_of_Swords.jpg/200px-Ten_of_Swords.jpg",
+    image: "/cards/Ten_of_Swords.jpg",
     keywords: ["End", "Finality", "Devastation", "Release"],
     meanings: {
       upright: "End, finality, devastation, release, hitting rock bottom.",
@@ -731,7 +731,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 60,
     name: "Page of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Page_of_Swords.jpg/200px-Page_of_Swords.jpg",
+    image: "/cards/Page_of_Swords.jpg",
     keywords: ["Curiosity", "Intellect", "Alertness", "New Ideas"],
     meanings: {
       upright: "Curiosity, intellect, alertness, new ideas, sharp mind.",
@@ -743,7 +743,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 61,
     name: "Knight of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Knight_of_Swords.jpg/200px-Knight_of_Swords.jpg",
+    image: "/cards/Knight_of_Swords.jpg",
     keywords: ["Action", "Aggression", "Directness", "Impulsiveness"],
     meanings: {
       upright: "Action, aggression, directness, impulsiveness, charging forward.",
@@ -755,7 +755,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 62,
     name: "Queen of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Queen_of_Swords.jpg/200px-Queen_of_Swords.jpg",
+    image: "/cards/Queen_of_Swords.jpg",
     keywords: ["Clarity", "Truth", "Independence", "Sharp Mind"],
     meanings: {
       upright: "Clarity, truth, independence, sharp mind, cutting through illusions.",
@@ -767,7 +767,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 63,
     name: "King of Swords",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/King_of_Swords.jpg/200px-King_of_Swords.jpg",
+    image: "/cards/King_of_Swords.jpg",
     keywords: ["Logic", "Authority", "Justice", "Intellect"],
     meanings: {
       upright: "Logic, authority, justice, intellect, clear thinking.",
@@ -781,7 +781,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 64,
     name: "Ace of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Ace_of_Pentacles.jpg/200px-Ace_of_Pentacles.jpg",
+    image: "/cards/Ace_of_Pentacles.jpg",
     keywords: ["Opportunity", "Prosperity", "New Ventures", "Wealth"],
     meanings: {
       upright: "Opportunity, prosperity, new ventures, wealth, manifestation.",
@@ -793,7 +793,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 65,
     name: "Two of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Two_of_Pentacles.jpg/200px-Two_of_Pentacles.jpg",
+    image: "/cards/Two_of_Pentacles.jpg",
     keywords: ["Balance", "Adaptability", "Juggling", "Flexibility"],
     meanings: {
       upright: "Balance, adaptability, juggling, flexibility, managing multiple priorities.",
@@ -805,7 +805,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 66,
     name: "Three of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Three_of_Pentacles.jpg/200px-Three_of_Pentacles.jpg",
+    image: "/cards/Three_of_Pentacles.jpg",
     keywords: ["Teamwork", "Skill", "Collaboration", "Mastery"],
     meanings: {
       upright: "Teamwork, skill, collaboration, mastery, building something together.",
@@ -817,7 +817,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 67,
     name: "Four of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Four_of_Pentacles.jpg/200px-Four_of_Pentacles.jpg",
+    image: "/cards/Four_of_Pentacles.jpg",
     keywords: ["Security", "Possession", "Conservatism", "Hoarding"],
     meanings: {
       upright: "Security, possession, conservatism, hoarding, material stability.",
@@ -829,7 +829,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 68,
     name: "Five of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Five_of_Pentacles.jpg/200px-Five_of_Pentacles.jpg",
+    image: "/cards/Five_of_Pentacles.jpg",
     keywords: ["Hardship", "Poverty", "Exclusion", "Struggle"],
     meanings: {
       upright: "Hardship, poverty, exclusion, struggle, feeling left out.",
@@ -841,7 +841,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 69,
     name: "Six of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Six_of_Pentacles.jpg/200px-Six_of_Pentacles.jpg",
+    image: "/cards/Six_of_Pentacles.jpg",
     keywords: ["Generosity", "Charity", "Giving", "Receiving"],
     meanings: {
       upright: "Generosity, charity, giving, receiving, balance of exchange.",
@@ -853,7 +853,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 70,
     name: "Seven of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Seven_of_Pentacles.jpg/200px-Seven_of_Pentacles.jpg",
+    image: "/cards/Seven_of_Pentacles.jpg",
     keywords: ["Patience", "Evaluation", "Long-Term Goals", "Waiting"],
     meanings: {
       upright: "Patience, evaluation, long-term goals, waiting for results.",
@@ -865,7 +865,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 71,
     name: "Eight of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Eight_of_Pentacles.jpg/200px-Eight_of_Pentacles.jpg",
+    image: "/cards/Eight_of_Pentacles.jpg",
     keywords: ["Dedication", "Skill", "Mastery", "Hard Work"],
     meanings: {
       upright: "Dedication, skill, mastery, hard work, attention to detail.",
@@ -877,7 +877,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 72,
     name: "Nine of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nine_of_Pentacles.jpg/200px-Nine_of_Pentacles.jpg",
+    image: "/cards/Nine_of_Pentacles.jpg",
     keywords: ["Independence", "Self-Sufficiency", "Luxury", "Reward"],
     meanings: {
       upright: "Independence, self-sufficiency, luxury, reward, enjoying the fruits of labor.",
@@ -889,7 +889,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 73,
     name: "Ten of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ten_of_Pentacles.jpg/200px-Ten_of_Pentacles.jpg",
+    image: "/cards/Ten_of_Pentacles.jpg",
     keywords: ["Legacy", "Wealth", "Family", "Abundance"],
     meanings: {
       upright: "Legacy, wealth, family, abundance, long-term security.",
@@ -901,7 +901,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 74,
     name: "Page of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Page_of_Pentacles.jpg/200px-Page_of_Pentacles.jpg",
+    image: "/cards/Page_of_Pentacles.jpg",
     keywords: ["Practicality", "Learning", "New Skills", "Material Focus"],
     meanings: {
       upright: "Practicality, learning, new skills, material focus, grounded approach.",
@@ -913,7 +913,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 75,
     name: "Knight of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Knight_of_Pentacles.jpg/200px-Knight_of_Pentacles.jpg",
+    image: "/cards/Knight_of_Pentacles.jpg",
     keywords: ["Diligence", "Reliability", "Consistency", "Hard Work"],
     meanings: {
       upright: "Diligence, reliability, consistency, hard work, slow but steady progress.",
@@ -925,7 +925,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 76,
     name: "Queen of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Queen_of_Pentacles.jpg/200px-Queen_of_Pentacles.jpg",
+    image: "/cards/Queen_of_Pentacles.jpg",
     keywords: ["Nurturing", "Practicality", "Abundance", "Comfort"],
     meanings: {
       upright: "Nurturing, practicality, abundance, comfort, material security.",
@@ -937,7 +937,7 @@ export const TAROT_DECK: TarotCard[] = [
   {
     id: 77,
     name: "King of Pentacles",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/King_of_Pentacles.jpg/200px-King_of_Pentacles.jpg",
+    image: "/cards/King_of_Pentacles.jpg",
     keywords: ["Wealth", "Stability", "Business", "Material Success"],
     meanings: {
       upright: "Wealth, stability, business, material success, practical leadership.",
