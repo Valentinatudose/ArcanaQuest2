@@ -46,13 +46,15 @@ export default function App() {
     }
   }, [user, drawNewCards, updateStreak]);
 
-  const handleCardFlip = (index: number) => {
-    const newFlipped = [...flippedCards];
+ const handleCardFlip = useCallback((index: number) => {
+  setFlippedCards(prev => {
+    const newFlipped = [...prev];
     newFlipped[index] = true;
-    setFlippedCards(newFlipped);
-  };
+    return newFlipped;
+  });
+}, []);
 
-  const allCardsFlipped = flippedCards.every(Boolean);
+const allCardsFlipped = flippedCards.every(Boolean);
 
   const startLearning = () => setGamePhase(GamePhase.LEARN);
 
