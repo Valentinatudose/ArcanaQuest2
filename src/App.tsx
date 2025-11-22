@@ -27,7 +27,6 @@ export default function App() {
 
   const [gamePhase, setGamePhase] = useState<GamePhase>(GamePhase.DRAW);
   const [currentDraw, setCurrentDraw] = useState<TarotCardType[]>([]);
-  const [flippedCards, setFlippedCards] = useState<boolean[]>([false, false, false]);
   const [quizQuestions, setQuizQuestions] = useState<QuestionType[]>([]);
   const [lastQuizResult, setLastQuizResult] = useState({ correct: 0, total: 5 });
   const [showWelcomeScreen, setShowWelcomeScreen] = useState(true);
@@ -35,7 +34,6 @@ export default function App() {
   const drawNewCards = useCallback(() => {
     const shuffled = [...TAROT_DECK].sort(() => 0.5 - Math.random());
     setCurrentDraw(shuffled.slice(0, 3));
-    setFlippedCards([false, false, false]);
     setGamePhase(GamePhase.DRAW);
   }, []);
 
@@ -45,16 +43,6 @@ export default function App() {
       updateStreak();
     }
   }, [user, drawNewCards, updateStreak]);
-
- const handleCardFlip = useCallback((index: number) => {
-  setFlippedCards(prev => {
-    const newFlipped = [...prev];
-    newFlipped[index] = true;
-    return newFlipped;
-  });
-}, []);
-
-const allCardsFlipped = flippedCards.every(Boolean);
 
   const startLearning = () => setGamePhase(GamePhase.LEARN);
 
@@ -69,18 +57,15 @@ const allCardsFlipped = flippedCards.every(Boolean);
     setLastQuizResult({ correct: correctAnswers, total: totalQuestions });
     const accuracy = correctAnswers / totalQuestions;
     if (accuracy >= 0.8) {
-        const pointsEarned = correctAnswers * 10;
-        addScore(pointsEarned);
-        addHint();
+      const pointsEarned = correctAnswers * 10;
+      addScore(pointsEarned);
+      addHint();
     }
     setGamePhase(GamePhase.RESULTS);
   };
   
   const retakeQuiz = () => setGamePhase(GamePhase.QUIZ);
-
-  const tryAgainQuiz = () => {
-      setGamePhase(GamePhase.QUIZ);
-  };
+  const tryAgainQuiz = () => setGamePhase(GamePhase.QUIZ);
   
   if (!user) {
     return (
@@ -95,34 +80,26 @@ const allCardsFlipped = flippedCards.every(Boolean);
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a0628] to-[#1d1a3f] text-brand-off-white font-poppins p-4 pt-24 md:pt-28">
+    <div className="h-screen bg-gradient-to-br from-[#0a0628] to-[#1d1a3f] text-brand-off-white font-poppins flex flex-col">
       <Header score={score} streak={streak} hints={hints} onLogout={logoutUser} />
 
-      <main className="container mx-auto max-w-5xl">
-        <h1 className="text-4xl md:text-5xl font-cinzel text-center mb-2 text-brand-off-white">Your Daily Draw</h1>
-        <p className="text-center text-lg text-brand-off-white/70 mb-8 md:mb-12">Tap the cards to reveal them.</p>
+      <main className="flex-1 flex flex-col items-center justify-start p-4 md:p-6">
+        <h1 className="text-4xl md:text-5xl font-cinzel text-center mb-4">Your Daily Draw</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 px-4 md:px-0">
-          {currentDraw.map((card, index) => (
-            <Card key={card.id} cardData={card} isFlipped={flippedCards[index]} onClick={() => handleCardFlip(index)} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 px-2 md:px-0 my-4">
+          {currentDraw.map((card) => (
+            <Card key={card.id} cardData={card} isFlipped={true} onClick={() => {}} />
           ))}
         </div>
 
-        {gamePhase === GamePhase.DRAW && (
-          <div className="text-center mt-12 animate-fade-in">
-            <button
-              onClick={startLearning}
-              disabled={!allCardsFlipped}
-              className={`px-8 py-3 font-bold rounded-lg shadow-lg text-xl transition-all duration-500 ${
-                allCardsFlipped
-                  ? 'bg-brand-purple text-white hover:shadow-glow-purple animate-pulse-slow'
-                  : 'bg-gray-600 text-gray-400 cursor-not-allowed'
-              }`}
-            >
-              {allCardsFlipped ? "Learn Today's Cards" : "Reveal All Cards to Continue"}
-            </button>
-          </div>
-        )}
+        <div className="text-center mt-6">
+          <button
+            onClick={startLearning}
+            className="px-6 py-3 bg-brand-purple text-white font-bold rounded-lg shadow-lg hover:shadow-glow-purple transition-all text-lg"
+          >
+            Learn Today's Cards
+          </button>
+        </div>
       </main>
 
       {gamePhase === GamePhase.LEARN && (
